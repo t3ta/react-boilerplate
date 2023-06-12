@@ -8,7 +8,6 @@ type Props = {
   handleButtonClick: () => void;
 };
 
-// 構造は Container に書く
 const Container: React.FC<Props & PropsForStyled> = ({
   count,
   handleButtonClick,
@@ -75,7 +74,6 @@ const StyledComponent: React.FC<Props> = styled(Container)`
   }
 `;
 
-// ロジックは Component に書く
 const Component: React.FC = () => {
   const [count, setCount] = useState(0);
 
